@@ -9,7 +9,7 @@ For CLI do:
 
 (the instance you are running on must have the necessary IAM permissions).  If you need to pass in credentials, this might be one way to do so:
 
-    docker run --env AWS_DEFAULT_REGION=us-east-t --env AWS_ACCESS_KEY_ID=AKIA... --env AWS_SECRET_ACCESS_KEY=... jt7d/aws ec2 describe-regions
+    docker run --env AWS_DEFAULT_REGION=us-east-1 --env AWS_ACCESS_KEY_ID=AKIA... --env AWS_SECRET_ACCESS_KEY=... jt7d/aws ec2 describe-regions
 
 For simple Python AWS scripts, you might use this as a base container.  Using Requests, you can access instance meta-data thus:
 
