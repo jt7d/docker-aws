@@ -1,8 +1,8 @@
 # docker-aws
 Docker image for AWS tools
 
-AWS CLI plus Python libraries boto, botocore, and requests.
-Version tag corresponds to the AWS CLI version.
+AWS CLI plus Python libraries boto, boto3, botocore, and requests.
+Docker version tag corresponds to the AWS CLI version.
 
 For CLI do:
 
