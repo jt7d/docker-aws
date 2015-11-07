@@ -12,6 +12,11 @@ For CLI do:
 
     docker run --env AWS_DEFAULT_REGION=us-east-1 --env AWS_ACCESS_KEY_ID=AKIA... --env AWS_SECRET_ACCESS_KEY=... jt7d/aws ec2 describe-regions
 
+To copy a logfile from the container host to s3 you could do something like this:
+
+    docker run --rm --name=s3cp --volume=/var/log/directory/name:/tmp/logfiles \
+      jt7d/aws s3 cp /tmp/logfiles/log-`date +%Y%m%d -d yesterday`  s3://mylogbucket/logs/docker
+
 For simple Python AWS scripts, you might use this as a base container.  Using Requests, you can access instance meta-data thus:
 
     import requests
