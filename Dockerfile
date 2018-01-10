@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:3.4
 
 RUN \
   mkdir -p /aws /root/.aws && \
